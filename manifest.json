@@ -1,0 +1,10 @@
+{
+    "name": "Claudia Negtrete Cosmetóloga",
+    "icons": [
+      {
+        "src": "static/logoClau.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ]
+  }
