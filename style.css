@@ -1,0 +1,168 @@
+    body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+
+    /* Fondo estático */
+    background-image: url('https://hotmart.s3.amazonaws.com/product_pictures/d1d4b680-35c6-4de1-816a-83c9c1fb514f/DERMOCOSMETOLOGIAscaled.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    }
+
+    .top-bar {
+    background-color: #777387;
+    color: #333;
+    font-size: 14px;
+    padding: 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    .birthstone-regular {
+    font-family: "Birthstone", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 56px;
+
+    /* Degradado metálico: tonos de plata y blanco */
+    background: linear-gradient(
+        to right,
+        #f5f5f5 0%,
+        #dcdcdc 25%,
+        #a9a9a9 50%,
+        #dcdcdc 75%,
+        #f5f5f5 100%
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Sombra para relieve metálico */
+    text-shadow:
+        1px 1px 1px #ccc,
+        2px 2px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+    }
+
+    .logo {
+    display: flex;
+    align-items: center;
+    }
+
+    .logo span {
+    font-size: 28px;
+    font-weight: bold;
+    color: #7b8b91;
+    }
+
+    .nav-links {
+    display: flex;
+    gap: 25px;
+    }
+
+    .nav-links a {
+    text-decoration: none;
+    color: #666;
+    font-size: 16px;
+    position: relative;
+    }
+
+    .nav-links a:hover {
+    color: #b29595;
+    }
+
+    .active {
+    color: #c4a5a5;
+    }
+
+    .search-box {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-left: 20px;
+    }
+
+    .search-box input {
+    border: none;
+    padding: 8px;
+    outline: none;
+    background: none;
+    }
+
+    .search-box button {
+    background-color: transparent;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    }
+
+    /* Estilo para la tarjeta */
+    .card {
+    width: 18rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 40px auto;
+    overflow: hidden;
+    }
+
+    .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    }
+
+    .card-body {
+    padding: 15px;
+    }
+
+    .card-text {
+    font-size: 14px;
+    color: #444;
+    }
+
+    .cards-container {
+    display: flex;
+    flex-direction: row;       /* Tarjetas en línea horizontal */
+    align-items: flex-start;   /* Alineadas arriba */
+    justify-content: flex-start;
+    margin-left: 40px;
+    margin-top: 30px;
+    gap: 20px;                 /* Espacio entre tarjetas */
+    }
+
+    .card {
+    width: 18rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    }
+
+    .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    }
+
+    .card-body {
+    padding: 15px;
+    }
+
+    .card-text {
+    font-size: 14px;
+    color: #444;
+    }
+
