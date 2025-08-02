@@ -2,8 +2,59 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Navbar estilo Dermosalud</title>
+  <meta property="og:image" content="https://www.jeapsolutions.com/static/icon_jeap_solutions.png">
+        <meta property="og:image:width" content="389px">
+        <meta property="og:image:height" content="542px">
+        <meta property="keywords" content="mantención de maquinaria, mecanico de maquina pesada, mecanico, soldadura, maestro">
+        <meta name="description"
+          content="Reparación y Mantención de Maquinarias y Coponentes Mineros">
+
+    <!-- Google / Search Engine Tags -->
+        <meta itemprop="name" content="Jeap Solutions" />
+        <meta itemprop="Reparación y Mantención de Maquinarias y Coponentes Mineros"
+          content="Reparación y Mantención de Maquinarias y Coponentes Mineros">
+    
+    <!-- Link -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="static/icon_jeap_solutions.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="static/icon_jeap_solutions.png"
+    />
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="static/icon_jeap_solutions.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/icon_jeap_solutions.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="static/icon_jeap_solutions.png">
+    <link rel="apple-touch-icon" href="static/icon_jeap_solutions.png">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="static/icon_jeap_solutions.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="static/icon_jeap_solutions.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="static/icon_jeap_solutions.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="static/icon_jeap_solutions.png">
+
+    <link rel="apple-touch-icon" sizes="120x120" href="static/icon_jeap_solutions.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="static/icon_jeap_solutions.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="static/icon_jeap_solutions.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/icon_jeap_solutions.png">
+
+    <!--Icon-->
+
+    <link rel="icon" type="image/jpg" href="static/icon_jeap_solutions.png" />
+    <link rel="manifest" href="manifest.json"/>
+    <link rel="icon" href="static/icon_jeap_solutions.png" type="image/jpg">
+
+  <!--Boostrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 
   <!-- Fuente Birthstone desde Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet" />
@@ -15,33 +66,51 @@
 
 <body>
   <div class="top-bar">
-    <div class="birthstone-regular">Claudia Negrete</div>
-    <div class="search-box">
-      <input type="text" placeholder="Buscar" />
-      <button>🔍</button>
-    </div>
+    <img src="static/logoClau.png" height="100px" width="auto">
+    
   </div>
 
-  <div class="navbar">
-    <div class="logo">
-      <span>Cosmetóloga</span>
-    </div>
-
-    <div class="nav-links">
-      <a href="#" class="active">Inicio</a>
-      <a href="#">Clínica del Acné</a>
-      <a href="#">Aparatología</a>
-      <a href="#">Antiedad</a>
-      <a href="#">Salud Corporal</a>
-      <a href="#">Tecnologías</a>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Cosmetóloga</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+    <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Clinica del acné</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Aparatología</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Antiedad</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Salud Corporal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Tecnologías</a>
+        </li>
+      </ul>
     </div>
   </div>
+</nav>
 
 <!-- CONTENEDOR DE TARJETAS -->
 <div class="cards-container">
   <!-- TARJETA 1 -->
   <div class="card">
-    <img src="static/nav/acne.png" alt="Imagen de ejemplo" class="card-img-top">
+    <img src="static/acne.png" alt="Imagen de ejemplo" class="card-img-top">
     <div class="card-body">
       <p class="card-text">
         La terapia con láser estimula la contracción del colágeno, elemento de soporte de la piel, reafirmando la superficie dérmica.
@@ -51,7 +120,7 @@
 
   <!-- TARJETA 2 -->
   <div class="card">
-    <img src="static/nav/verrugas.png" alt="Imagen de ejemplo" class="card-img-top">
+    <img src="static/verrugas.png" alt="Imagen de ejemplo" class="card-img-top">
     <div class="card-body">
       <p class="card-text">
         Es el tratamiento más usado y recomendado. El láser es usado para extirpar las verrugas.
