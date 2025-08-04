@@ -127,11 +127,16 @@
                 <br>cómodo, higiénico y supervisado profesionalmente.</b></p>
                 <br>
                 <style>
+  .tabla-container {
+    overflow-x: auto;
+    margin-top: 20px;
+  }
+
   .tabla-servicios {
     width: 100%;
+    min-width: 600px;
     border-collapse: collapse;
     font-family: Arial, sans-serif;
-    margin-top: 20px;
   }
 
   .tabla-servicios th, .tabla-servicios td {
@@ -155,93 +160,104 @@
     transition: all 0.3s ease;
   }
 
+  /* Responsive para móviles */
   @media (max-width: 768px) {
-    .tabla-servicios, .tabla-servicios thead, .tabla-servicios tbody, .tabla-servicios th, .tabla-servicios td, .tabla-servicios tr {
-      display: block;
+    .tabla-servicios {
+      min-width: unset;
+      border: 0;
     }
 
     .tabla-servicios thead {
       display: none;
     }
 
-    .tabla-servicios td {
-      position: relative;
-      padding-left: 50%;
+    .tabla-servicios tr {
+      display: block;
+      margin-bottom: 15px;
       border: 1px solid #ddd;
-      margin-bottom: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+    }
+
+    .tabla-servicios td {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 15px;
+      border: none;
+      border-bottom: 1px solid #eee;
+    }
+
+    .tabla-servicios td:last-child {
+      border-bottom: none;
     }
 
     .tabla-servicios td::before {
-      position: absolute;
-      top: 12px;
-      left: 15px;
-      width: 45%;
-      padding-right: 10px;
-      white-space: nowrap;
+      content: attr(data-label);
       font-weight: bold;
+      color: #007B7F;
     }
-
-    .tabla-servicios td:nth-child(1)::before { content: "📍 Zona / Servicio"; }
-    .tabla-servicios td:nth-child(2)::before { content: "📋 Clasificación"; }
-    .tabla-servicios td:nth-child(3)::before { content: "⏱ Duración"; }
-    .tabla-servicios td:nth-child(4)::before { content: "💲 Precio"; }
   }
 </style>
 
-<table class="tabla-servicios">
-  <thead>
-    <tr>
-      <th>📍 Zona / Servicio</th>
-      <th>📋 Clasificación</th>
-      <th>⏱ Duración Aprox.</th>
-      <th>💲 Precio por Sesión (MXN)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Bigote / Mentón / Patillas</td>
-      <td>Zona pequeña</td>
-      <td>15 – 20 min</td>
-      <td>$350 – $450</td>
-    </tr>
-    <tr>
-      <td>Frente</td>
-      <td>Zona pequeña</td>
-      <td>15 – 20 min</td>
-      <td>$350 – $450 (estimado)</td>
-    </tr>
-    <tr>
-      <td>Axilas</td>
-      <td>Zona pequeña</td>
-      <td>15 – 20 min</td>
-      <td>$500 – $600</td>
-    </tr>
-    <tr>
-      <td>Bikini completo</td>
-      <td>Zona mediana</td>
-      <td>30 – 45 min</td>
-      <td>$700 – $900</td>
-    </tr>
-    <tr>
-      <td>Piernas completas</td>
-      <td>Zona grande</td>
-      <td>~60 min</td>
-      <td>$1,200 – $1,500</td>
-    </tr>
-    <tr>
-      <td>Espalda o Pecho</td>
-      <td>Zona grande</td>
-      <td>~60 min</td>
-      <td>$1,000 – $1,300</td>
-    </tr>
-    <tr>
-      <td>Brazos, Ingles, Línea alba, Glúteos, Abdomen</td>
-      <td>Variable</td>
-      <td>30 – 60 min</td>
-      <td>Consulta personalizada</td>
-    </tr>
-  </tbody>
-</table>
+<div class="tabla-container">
+  <table class="tabla-servicios">
+    <thead>
+      <tr>
+        <th>📍 Zona / Servicio</th>
+        <th>📋 Clasificación</th>
+        <th>⏱ Duración Aprox.</th>
+        <th>💲 Precio por Sesión (MXN)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="📍 Zona / Servicio">Bigote / Mentón / Patillas</td>
+        <td data-label="📋 Clasificación">Zona pequeña</td>
+        <td data-label="⏱ Duración Aprox.">15 – 20 min</td>
+        <td data-label="💲 Precio por Sesión">$350 – $450</td>
+      </tr>
+      <tr>
+        <td data-label="📍 Zona / Servicio">Frente</td>
+        <td data-label="📋 Clasificación">Zona pequeña</td>
+        <td data-label="⏱ Duración Aprox.">15 – 20 min</td>
+        <td data-label="💲 Precio por Sesión">$350 – $450 (estimado)</td>
+      </tr>
+      <tr>
+        <td data-label="📍 Zona / Servicio">Axilas</td>
+        <td data-label="📋 Clasificación">Zona pequeña</td>
+        <td data-label="⏱ Duración Aprox.">15 – 20 min</td>
+        <td data-label="💲 Precio por Sesión">$500 – $600</td>
+      </tr>
+      <tr>
+        <td data-label="📍 Zona / Servicio">Bikini completo</td>
+        <td data-label="📋 Clasificación">Zona mediana</td>
+        <td data-label="⏱ Duración Aprox.">30 – 45 min</td>
+        <td data-label="💲 Precio por Sesión">$700 – $900</td>
+      </tr>
+      <tr>
+        <td data-label="📍 Zona / Servicio">Piernas completas</td>
+        <td data-label="📋 Clasificación">Zona grande</td>
+        <td data-label="⏱ Duración Aprox.">~60 min</td>
+        <td data-label="💲 Precio por Sesión">$1,200 – $1,500</td>
+      </tr>
+      <tr>
+        <td data-label="📍 Zona / Servicio">Espalda o Pecho</td>
+        <td data-label="📋 Clasificación">Zona grande</td>
+        <td data-label="⏱ Duración Aprox.">~60 min</td>
+        <td data-label="💲 Precio por Sesión">$1,000 – $1,300</td>
+      </tr>
+      <tr>
+        <td data-label="📍 Zona / Servicio">Brazos, Ingles, Línea alba, Glúteos, Abdomen</td>
+        <td data-label="📋 Clasificación">Variable</td>
+        <td data-label="⏱ Duración Aprox.">30 – 60 min</td>
+        <td data-label="💲 Precio por Sesión">Consulta personalizada</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 
 
 
