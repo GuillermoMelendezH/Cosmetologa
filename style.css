@@ -1,161 +1,130 @@
-    body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
+.detalle {
+  position: relative;
+  font-family: 'Segoe UI', sans-serif;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* asegura que la pseudo capa no se desborde */
+  z-index: 0;
+}
 
-    /* Fondo estático */
-    background-image: url('https://hotmart.s3.amazonaws.com/product_pictures/d1d4b680-35c6-4de1-816a-83c9c1fb514f/DERMOCOSMETOLOGIAscaled.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    }
+.detalle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.466)), 
+    url('https://hotmart.s3.amazonaws.com/product_pictures/d1d4b680-35c6-4de1-816a-83c9c1fb514f/DERMOCOSMETOLOGIAscaled.jpg') center/cover no-repeat;
+  z-index: -1;
+}
 
-    .top-bar {
-    background-color: #777387;
-    color: #333;
-    font-size: 14px;
-    padding: 8px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    }
+.cards-container {
+  position: relative;
+  z-index: 2;
+  opacity: 1;
+  margin-top: 20px;
+}
 
-    .birthstone-regular {
-    font-family: "Birthstone", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 56px;
-    }
+.boton-personalizado {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2A4159;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
-    .birthstone-regular {
-    font-size: 60px;
-    color: #C0C0C0; /* Color plateado básico */
-    text-shadow:
-        1px 1px 0 #ffffff,
-        1px 1px 2px #999999,
-        -1px -1px 1px #dcdcdc;
-    letter-spacing: 1px;
-    }
+.boton-personalizado:hover {
+  background-color: yellow;
+  color: black;
+}
 
-   
-    .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 30px;
-    background-color: white;
-    border-bottom: 1px solid #eee;
-    }
+.top-bar {
+background-color: #777387;
+color: #333;
+font-size: 14px;
+padding: 8px 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
 
-    .logo {
-    display: flex;
-    align-items: center;
-    }
 
-    .logo span {
-    font-size: 28px;
-    font-weight: bold;
-    color: #7b8b91;
-    }
+.navbar {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 10px 30px;
+background-color: white;
+border-bottom: 1px solid #eee;
+}
 
-    .nav-links {
-    display: flex;
-    gap: 25px;
-    }
+.nav-link {
+display: flex;
+gap: 25px;
+}
 
-    .nav-links a {
-    text-decoration: none;
-    color: #666;
-    font-size: 16px;
-    position: relative;
-    }
+.nav-link {
+text-decoration: none;
+color: #666;
+font-size: 19px;
+position: relative;
+}
 
-    .nav-links a:hover {
-    color: #b29595;
-    }
+.nav-link:hover {
+color: #294156;
+}
 
-    .active {
-    color: #c4a5a5;
-    }
+.active {
+color: #c4a5a5;
+}
 
-    .search-box {
-    display: flex;
-    align-items: center;
-    background-color: #f1f1f1;
-    border-radius: 5px;
-    overflow: hidden;
-    margin-left: 20px;
-    }
+.faciales {
+margin-left: 20px;
+margin-right: 20px;
+margin-top: 20px;
+}
 
-    .search-box input {
-    border: none;
-    padding: 8px;
-    outline: none;
-    background: none;
-    }
+.collage {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
-    .search-box button {
-    background-color: transparent;
-    border: none;
-    padding: 8px;
-    cursor: pointer;
-    }
+.footer {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+}
 
-    /* Estilo para la tarjeta */
-    .card {
-    width: 18rem;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin: 40px auto;
-    overflow: hidden;
-    }
+.footer-left, .footer-right {
+  width: 50%;
+  box-sizing: border-box;
+}
 
-    .card img {
-    width: 100%;
-    height: auto;
-    display: block;
-    }
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 15px;
+  font-size: 24px;
+}
 
-    .card-body {
-    padding: 15px;
-    }
+.social-icons a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
 
-    .card-text {
-    font-size: 14px;
-    color: #444;
-    }
+.social-icons a:hover {
+  color: #00ffcc;
+}
 
-    .cards-container {
-    display: flex;
-    flex-direction: row;       /* Tarjetas en línea horizontal */
-    align-items: flex-start;   /* Alineadas arriba */
-    justify-content: flex-start;
-    margin-left: 40px;
-    margin-top: 30px;
-    gap: 20px;                 /* Espacio entre tarjetas */
-    }
 
-    .card {
-    width: 18rem;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    overflow: hidden;
-    }
-
-    .card img {
-    width: 100%;
-    height: auto;
-    display: block;
-    }
-
-    .card-body {
-    padding: 15px;
-    }
-
-    .card-text {
-    font-size: 14px;
-    color: #444;
-    }
 
