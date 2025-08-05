@@ -62,18 +62,21 @@
   <!-- Enlace al CSS externo -->
   <link rel="stylesheet" href="style.css" />
 
+  <!-- Tipo de letra palabra Cosmiatra -->
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@300&display=swap" rel="stylesheet">
+
 </head>
 
 <header>
   <div class="top-bar">
     <a href="index.html">
-    <img src="static/logoClau.png" height="100px" width="auto">
+    <img src="static/logoClau3.png" height="100px" width="auto">
     </a>    
   </div>
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Cosmetóloga</a>
+    <a class="navbar-brand" href="index.html"><b>Cosmiatra</b></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -108,159 +111,174 @@
 <body>
 <section class="detalle">
 <!-- CONTENEDOR DE TARJETAS -->
-  <div class="cards-container">
-    <section id="depilaciones" class="depilaciones" >
-      <div class="">
-        <div class="row g-0">
-          <div class="col-md-4">
+<div class="cards-container">
+<section id="depilaciones" class="depilaciones" >
+    <div class="">
+    <div class="row g-0">
+        <div class="col-md-4">
             <img src="static/Depilacion.png" class="img-fluid rounded-start" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body" style="margin-left: 20px;">
-              <h4 class="card-title">Depilacion Láser</h4>
-              <br>
-              <p class="card-text"><b>Resultados seguros y duraderos
-                <br>
-                <br>Como especialista en salud estética, te ofrezco tratamientos de depilación láser personalizados y clínicamente seguros, 
-                <br>ideales para eliminar el vello no deseado de manera progresiva y eficaz. Utilizo tecnología médica de última generación, 
-                <br>adaptada a tu tipo de piel, con resultados visibles desde las primeras sesiones. Mejora tu calidad de vidacon un servicio 
-                <br>cómodo, higiénico y supervisado profesionalmente.</b></p>
-                <br>
-                <style>
-  .tabla-container {
+        </div>
+        <div class="col-md-8">
+        <div class="card-body" style="margin-left: 20px;">
+            <h4 class="card-title">Depilacion Láser</h4>
+            <br>
+            <p class="card-text"><b>Resultados seguros y duraderos
+            <br>
+            <br>Como especialista en salud estética, te ofrezco tratamientos de depilación láser personalizados y clínicamente seguros, 
+            <br>ideales para eliminar el vello no deseado de manera progresiva y eficaz. Utilizo tecnología médica de última generación, 
+            <br>adaptada a tu tipo de piel, con resultados visibles desde las primeras sesiones. Mejora tu calidad de vidacon un servicio 
+            <br>cómodo, higiénico y supervisado profesionalmente.</b></p>
+            <br>
+    <style>
+    .tabla-container {
     overflow-x: auto;
     margin-top: 20px;
-  }
+    margin-right: 20px;
+    }
 
-  .tabla-servicios {
+    .tabla-servicios {
     width: 100%;
     min-width: 600px;
     border-collapse: collapse;
     font-family: Arial, sans-serif;
-  }
+    }
+    
 
-  .tabla-servicios th, .tabla-servicios td {
+    .tabla-servicios th, .tabla-servicios td {
     padding: 12px;
     border: 1px solid #ddd;
     text-align: left;
-  }
-
-  .tabla-servicios thead {
-    background-color: #777387;
-    color: white;
-  }
-
-  .tabla-servicios tbody tr:nth-child(even) {
-    background-color: #f4f4f4;
-  }
-
-  .tabla-servicios tbody tr:hover {
-    background-color: #e8f6f6;
-    box-shadow: 0 0 10px rgba(0, 123, 127, 0.3);
-    transition: all 0.3s ease;
-  }
-
-  /* Responsive para móviles */
-  @media (max-width: 768px) {
-    .tabla-servicios {
-      min-width: unset;
-      border: 0;
     }
 
     .tabla-servicios thead {
-      display: none;
+    background-color: #777387;
+    color: white;
+    }
+
+    .tabla-servicios tbody tr:nth-child(even) {
+    background-color: #decfcf;
+    }
+
+    .tabla-servicios tbody tr:hover {
+    background-color: #c5c6c6;
+    box-shadow: 0 0 10px rgba(0, 123, 127, 0.3);
+    transition: all 0.3s ease;
+    }
+
+    /* Responsive para móviles */
+    @media (max-width: 768px) {
+    .tabla-servicios {
+        min-width: unset;
+        border: 0;
+    }
+
+    .tabla-servicios thead {
+        display: none;
     }
 
     .tabla-servicios tr {
-      display: block;
-      margin-bottom: 15px;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
-      overflow: hidden;
+        display: block;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+        overflow: hidden;
     }
 
     .tabla-servicios td {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 15px;
-      border: none;
-      border-bottom: 1px solid #eee;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
+        border: none;
+        border-bottom: 1px solid #eee;
     }
 
     .tabla-servicios td:last-child {
-      border-bottom: none;
+        border-bottom: none;
     }
 
     .tabla-servicios td::before {
-      content: attr(data-label);
-      font-weight: bold;
-      color: #007B7F;
+        content: attr(data-label);
+        font-weight: bold;
+        color: #007B7F;
     }
-  }
-</style>
+    }
+    </style>
 
-<div class="tabla-container">
-  <table class="tabla-servicios">
+    <div class="tabla-container">
+    <table class="tabla-servicios">
     <thead>
-      <tr>
-        <th>📍 Zona / Servicio</th>
-        <th>📋 Clasificación</th>
+        <tr>
+        <th> Servicio</th>
         <th>⏱ Duración Aprox.</th>
         <th>💲 Precio por Sesión (MXN)</th>
-      </tr>
+        </tr>
     </thead>
     <tbody>
-      <tr>
+        <tr>
         <td data-label="📍 Zona / Servicio">Bigote / Mentón / Patillas</td>
-        <td data-label="📋 Clasificación">Zona pequeña</td>
         <td data-label="⏱ Duración Aprox.">15 – 20 min</td>
         <td data-label="💲 Precio por Sesión">$350 – $450</td>
-      </tr>
-      <tr>
+        </tr>
+        <tr>
         <td data-label="📍 Zona / Servicio">Frente</td>
-        <td data-label="📋 Clasificación">Zona pequeña</td>
         <td data-label="⏱ Duración Aprox.">15 – 20 min</td>
         <td data-label="💲 Precio por Sesión">$350 – $450 (estimado)</td>
-      </tr>
-      <tr>
+        </tr>
+        <tr>
         <td data-label="📍 Zona / Servicio">Axilas</td>
-        <td data-label="📋 Clasificación">Zona pequeña</td>
         <td data-label="⏱ Duración Aprox.">15 – 20 min</td>
         <td data-label="💲 Precio por Sesión">$500 – $600</td>
-      </tr>
-      <tr>
+        </tr>
+        <tr>
         <td data-label="📍 Zona / Servicio">Bikini completo</td>
-        <td data-label="📋 Clasificación">Zona mediana</td>
         <td data-label="⏱ Duración Aprox.">30 – 45 min</td>
         <td data-label="💲 Precio por Sesión">$700 – $900</td>
-      </tr>
-      <tr>
+        </tr>
+        <tr>
         <td data-label="📍 Zona / Servicio">Piernas completas</td>
-        <td data-label="📋 Clasificación">Zona grande</td>
-        <td data-label="⏱ Duración Aprox.">~60 min</td>
+        <td data-label="⏱ Duración Aprox.">60 min</td>
         <td data-label="💲 Precio por Sesión">$1,200 – $1,500</td>
-      </tr>
-      <tr>
+        </tr>
+        <tr>
         <td data-label="📍 Zona / Servicio">Espalda o Pecho</td>
-        <td data-label="📋 Clasificación">Zona grande</td>
-        <td data-label="⏱ Duración Aprox.">~60 min</td>
+        <td data-label="⏱ Duración Aprox.">60 min</td>
         <td data-label="💲 Precio por Sesión">$1,000 – $1,300</td>
-      </tr>
-      <tr>
-        <td data-label="📍 Zona / Servicio">Brazos, Ingles, Línea alba, Glúteos, Abdomen</td>
-        <td data-label="📋 Clasificación">Variable</td>
+        </tr>
+        <tr>
+        <td data-label="📍 Zona / Servicio">Brazos, Ingles, Glúteos, Abdomen</td>
         <td data-label="⏱ Duración Aprox.">30 – 60 min</td>
         <td data-label="💲 Precio por Sesión">Consulta personalizada</td>
-      </tr>
+        </tr>
     </tbody>
-  </table>
+    </table>
+    <br>
+    <br>
+    <div class="card mb-4 border-0" style="background-color: transparent; text-align: left; max-width: 400px;">
+  <div class="card-header border-0 bg-transparent ps-0">
+    <strong>Beneficios</strong>
+  </div>
+  <div class="card-body ps-0">
+    <h5 class="card-title">Depilación Láser</h5>
+    <p class="card-text">
+      ✔ Resultados visibles desde la primera sesión<br>
+      ✔ Reducción del vello hasta un 90%<br>
+      ✔ Piel más suave y sin irritaciones<br>
+      ✔ Evita foliculitis y manchas por depilación convencional
+    </p>
+    <p class="card-text mt-3">
+      <strong>Requiere evaluación previa gratuita.</strong><br>
+      Agenda tu cita y da el paso a una piel libre de vello, cómoda y saludable.
+    </p>
+    <div class="text-center mt-3">
+      <a href="#" class="btn btn-primary">Agendar cita</a>
+    </div>
+  </div>
 </div>
-
-
-
-
+</div>
+</div>
+    </div>
                 </div>
             </div>
             </div>
