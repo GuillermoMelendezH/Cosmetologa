@@ -136,66 +136,91 @@
     </section>
     <br>
     <br>
-    <section id="depilaciones" class="depilaciones" > 
-      <div class="">
-        <div class="row g-0">
-          <div class="col-md-8">
-            <div class="card-body" style="margin-left: 20px;">
-              <h4 class="card-title">Depilaciones</h4>
-              <br>
-              <p class="card-text"><b>Depilación Láser Segura y Efectiva
-                <br>Tecnología médica avanzada para eliminar el vello no deseado de forma progresiva y duradera
-                <br>Tratamientos personalizados para todo tipo de piel.</b></p>
-              <a href="depilaciones.html" class="boton-personalizado">Ver más</a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <img src="static/Depilacion.png" class="img-fluid rounded-start" alt="...">
-          </div>
+  <section id="depilaciones" class="depilaciones"> 
+  <div class="cards-container">
+    <div class="row g-0">
+      <div class="col-md-8">
+        <div class="card-body" style="margin-left: 20px;">
+          <h4 class="card-title">Depilaciones</h4>
+          <br>
+          <p class="card-text"><b>Depilación Láser Segura y Efectiva
+            <br>Tecnología médica avanzada para eliminar el vello no deseado de forma progresiva y duradera
+            <br>Tratamientos personalizados para todo tipo de piel.</b></p>
+          <a href="depilaciones.html" class="boton-personalizado">Ver más</a>
         </div>
       </div>
-    </section>
-    <br>
-    <br>
-    <section id="tratamientosCorporales" class="corporales" > 
-      <div class="">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="static/radiofrecuencia.png" class="img-fluid rounded-start" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body" style="margin-left: 20px;">
-              <h4 class="card-title">Tratamientos Corporales</h4>
-              <br>
-              <p class="card-text">¡Renueva tu piel con un facial! ✨
-                <br>Limpieza, hidratación y brillo en una sola sesión. Ideal para combatir el estrés, el acné o simplemente para consentirte.
-                <br>Tu piel lo va a amar</p>
-              <a href="tratamientoscorporales.html" class="boton-personalizado">Ver más</a>
-            </div>
-          </div>
+      <div class="col-md-4">
+        <img src="static/Depilacion.png" class="img-fluid rounded-start" alt="..." style="margin-right: 20px;">
+      </div>
+    </div>
+  </div>
+  </section>
+  <br>
+  <br>
+  <section id="tratamientosCorporales" class="corporales"> 
+  <div class="">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="static/radiofrecuencia.png" class="img-fluid rounded-start" alt="..." style="margin: 20px;">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body" style="margin-left: 20px;">
+          <h4 class="card-title">Tratamientos Corporales</h4>
+          <br>
+          <p class="card-text">¡Renueva tu piel con un facial! ✨
+            <br>Limpieza, hidratación y brillo en una sola sesión. Ideal para combatir el estrés, el acné o simplemente para consentirte.
+            <br>Tu piel lo va a amar</p>
+          <a href="tratamientoscorporales.html" class="boton-personalizado">Ver más</a>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+  </section>
   </div>
 <br>
 <br>
 <br>
-<section>
-  <div class="collage">
-    <div class="row">
-      <div class="col-6"><img src="static/collage1.jpg" alt="img1"></div>
-      <div class="col-6"><img src="static/collage2.jpg" alt="img2"></div>
-    </div>
-    <div class="row">
-      <div class="col-6"><img src="static/collage3.jpg" alt="img3"></div>
-      <div class="col-6"><img src="static/collage5.jpg" alt="img4"></div>
-    </div>
-    <div class="row">
-      <div class="col-12"><img src="static/collage4.jpg" alt="img5"></div>
-    </div>
-  </div>
-</section>
+<!-- Carrusel de 5 imágenes -->
+<div id="carruselImagenes" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
 
+    <!-- Imagen 1 -->
+    <div class="carousel-item active">
+      <img src="static/collage1.jpg" class="d-block w-100" alt="Imagen 1" style="max-height: 500px; width: auto; margin: 0 auto; display: block; object-fit: contain;">
+    </div>
+
+    <!-- Imagen 2 -->
+    <div class="carousel-item">
+      <img src="static/collage2.jpg" class="d-block w-100" alt="Imagen 2" style="max-height: 500px; width: auto; margin: 0 auto; display: block; object-fit: contain;">
+    </div>
+
+    <!-- Imagen 3 -->
+    <div class="carousel-item">
+      <img src="static/collage3.jpg" class="d-block w-100" alt="Imagen 3" style="max-height: 500px; width: auto; margin: 0 auto; display: block; object-fit: contain;">
+    </div>
+
+    <!-- Imagen 4 -->
+    <div class="carousel-item">
+      <img src="static/collage4.jpg" class="d-block w-100" alt="Imagen 4" style="max-height: 500px; width: auto; margin: 0 auto; display: block; object-fit: contain;">
+    </div>
+
+    <!-- Imagen 5 -->
+    <div class="carousel-item">
+      <img src="static/collage5.jpg" class="d-block w-100" alt="Imagen 5" style="max-height: 500px; width: auto; margin: 0 auto; display: block; object-fit: contain;">
+    </div>
+
+  </div>
+
+  <!-- Botones de navegación -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carruselImagenes" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carruselImagenes" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Siguiente</span>
+  </button>
+</div>
 </section>
 <footer class="footer">
   <div class="footer-left">
