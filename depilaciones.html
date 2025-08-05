@@ -130,129 +130,90 @@
             <br>cómodo, higiénico y supervisado profesionalmente.</b></p>
             <br>
     <style>
-    .tabla-container {
-    overflow-x: auto;
-    margin-top: 20px;
-    margin-right: 20px;
-    }
-
-    .tabla-servicios {
+  .tabla-depilacion {
     width: 100%;
-    min-width: 600px;
+    max-width: 700px;
     border-collapse: collapse;
     font-family: Arial, sans-serif;
-    }
-    
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
 
-    .tabla-servicios th, .tabla-servicios td {
-    padding: 12px;
+  .tabla-depilacion th, .tabla-depilacion td {
+    padding: 12px 16px;
     border: 1px solid #ddd;
     text-align: left;
-    }
+  }
 
-    .tabla-servicios thead {
-    background-color: #777387;
+  .tabla-depilacion thead {
+    background-color: #007B7F;
     color: white;
-    }
+  }
 
-    .tabla-servicios tbody tr:nth-child(even) {
-    background-color: #decfcf;
-    }
+  .tabla-depilacion tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
 
-    .tabla-servicios tbody tr:hover {
+  .tabla-depilacion tbody tr:hover {
     background-color: #c5c6c6;
-    box-shadow: 0 0 10px rgba(0, 123, 127, 0.3);
-    transition: all 0.3s ease;
-    }
+  }
 
-    /* Responsive para móviles */
-    @media (max-width: 768px) {
-    .tabla-servicios {
-        min-width: unset;
-        border: 0;
+  @media (max-width: 600px) {
+    .tabla-depilacion {
+      font-size: 14px;
     }
+  }
+</style>
 
-    .tabla-servicios thead {
-        display: none;
-    }
+<table class="tabla-depilacion">
+  <thead>
+    <tr>
+      <th>Zonas de Tratamiento</th>
+      <th>💲 Precio por Sesión (MXN)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bigote / Mentón / Patillas</td>
+      <td>$350 – $450</td>
+    </tr>
+    <tr>
+      <td>Axilas</td>
+      <td>$500 – $600</td>
+    </tr>
+    <tr>
+      <td>Piernas completas</td>
+      <td>$1,200 – $1,500</td>
+    </tr>
+    <tr>
+      <td>Bikini completo</td>
+      <td>$700 – $900</td>
+    </tr>
+    <tr>
+      <td>Espalda o Pecho</td>
+      <td>$1,000 – $1,300</td>
+    </tr>
+  </tbody>
+</table>
 
-    .tabla-servicios tr {
-        display: block;
-        margin-bottom: 15px;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
-        overflow: hidden;
-    }
+<!-- Información adicional -->
+<div style="max-width: 700px; margin: 20px auto; font-family: Arial, sans-serif; font-size: 15px; line-height: 1.6;">
+  <p><strong>Duración por sesión:</strong></p>
+  <ul>
+    <li>Zonas pequeñas: 15 a 20 min</li>
+    <li>Zonas medianas: 30 a 45 min</li>
+    <li>Zonas grandes: 60 min aprox.</li>
+  </ul>
 
-    .tabla-servicios td {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 15px;
-        border: none;
-        border-bottom: 1px solid #eee;
-    }
+  <p><strong>Número de sesiones recomendadas:</strong><br>
+    De 6 a 8 sesiones, con refuerzos posteriores según tipo de piel y vello.
+  </p>
 
-    .tabla-servicios td:last-child {
-        border-bottom: none;
-    }
+  <p><strong>Disponible para:</strong><br>
+    Mujeres y hombres.
+  </p>
+</div>
 
-    .tabla-servicios td::before {
-        content: attr(data-label);
-        font-weight: bold;
-        color: #007B7F;
-    }
-    }
-    </style>
-
-    <div class="tabla-container">
-    <table class="tabla-servicios">
-    <thead>
-        <tr>
-        <th> Servicio</th>
-        <th>⏱ Duración Aprox.</th>
-        <th>💲 Precio por Sesión (MXN)</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-        <td data-label="📍 Zona / Servicio">Bigote / Mentón / Patillas</td>
-        <td data-label="⏱ Duración Aprox.">15 – 20 min</td>
-        <td data-label="💲 Precio por Sesión">$350 – $450</td>
-        </tr>
-        <tr>
-        <td data-label="📍 Zona / Servicio">Frente</td>
-        <td data-label="⏱ Duración Aprox.">15 – 20 min</td>
-        <td data-label="💲 Precio por Sesión">$350 – $450 (estimado)</td>
-        </tr>
-        <tr>
-        <td data-label="📍 Zona / Servicio">Axilas</td>
-        <td data-label="⏱ Duración Aprox.">15 – 20 min</td>
-        <td data-label="💲 Precio por Sesión">$500 – $600</td>
-        </tr>
-        <tr>
-        <td data-label="📍 Zona / Servicio">Bikini completo</td>
-        <td data-label="⏱ Duración Aprox.">30 – 45 min</td>
-        <td data-label="💲 Precio por Sesión">$700 – $900</td>
-        </tr>
-        <tr>
-        <td data-label="📍 Zona / Servicio">Piernas completas</td>
-        <td data-label="⏱ Duración Aprox.">60 min</td>
-        <td data-label="💲 Precio por Sesión">$1,200 – $1,500</td>
-        </tr>
-        <tr>
-        <td data-label="📍 Zona / Servicio">Espalda o Pecho</td>
-        <td data-label="⏱ Duración Aprox.">60 min</td>
-        <td data-label="💲 Precio por Sesión">$1,000 – $1,300</td>
-        </tr>
-        <tr>
-        <td data-label="📍 Zona / Servicio">Brazos, Ingles, Glúteos, Abdomen</td>
-        <td data-label="⏱ Duración Aprox.">30 – 60 min</td>
-        <td data-label="💲 Precio por Sesión">Consulta personalizada</td>
-        </tr>
-    </tbody>
-    </table>
     <br>
     <br>
     <div class="card mb-4 border-0" style="background-color: transparent; text-align: left; max-width: 400px;">
@@ -268,7 +229,7 @@
       ✔ Evita foliculitis y manchas por depilación convencional
     </p>
     <p class="card-text mt-3">
-      <strong>Requiere evaluación previa gratuita.</strong><br>
+      <strong>Requiere evaluación previa.</strong><br>
       Agenda tu cita y da el paso a una piel libre de vello, cómoda y saludable.
     </p>
     <div class="text-center mt-3">
