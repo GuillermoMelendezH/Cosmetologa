@@ -129,12 +129,27 @@ margin-top: 20px;
   gap: 10px;
 }
 
+.carousel-item img {
+  width: 100%;
+  height: 60vh; /* altura relativa a la pantalla */
+  object-fit: cover; /* recorta y centra */
+  object-position: center; /* centra la imagen */
+  border-radius: 8px; /* opcional */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 40vh; /* menos altura en móviles */
+  }
+}
+
 
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  background-color: #222;
+  background-color: #777387;
   color: white;
   padding: 20px;
   flex-wrap: wrap;
@@ -144,10 +159,6 @@ margin-top: 20px;
 .footer-left {
   flex: 1;
   min-width: 250px;
-}
-
-.footer-left h3 {
-  margin-bottom: 15px;
 }
 
 .social-icons {
@@ -169,35 +180,20 @@ margin-top: 20px;
   text-decoration: none;
 }
 
-.icon.gmail {
-  background-color: #d44638;
-}
-
-.icon.whatsapp {
-  background-color: #25d366;
-}
-
-.icon.location {
-  background-color: #f0c040;
-}
-
-.social-icons .icon:hover {
-  transform: scale(1.1);
-  opacity: 0.85;
-}
-
-.footer-left p {
-  margin: 5px 0;
-  font-size: 15px;
-}
+.icon.gmail { background-color: #d44638; }
+.icon.whatsapp { background-color: #25d366; }
+.icon.location { background-color: #f0c040; }
 
 .footer-right {
   flex: 1;
   min-width: 250px;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-right iframe {
   width: 100%;
+  max-width: 500px;
   height: 220px;
   border: none;
   border-radius: 8px;
@@ -207,17 +203,26 @@ margin-top: 20px;
 @media (max-width: 768px) {
   .footer {
     flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
   .social-icons {
+    justify-content: center; /* centra los botones en móvil */
+  }
+
+  .footer-right {
+    width: 100%;
     justify-content: center;
   }
 
   .footer-right iframe {
+    width: 90%;
     height: 250px;
   }
 }
+
+
 
 
 
